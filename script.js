@@ -8,13 +8,13 @@ cobra[0] = {
 }
 
 function criarBG() {
-    context.fillStyle = 'lightgreen';
+    context.fillStyle = 'lightgray';
     context.fillRect(0, 0, 16 * box, 16 * box);
 }
 
 function criarCobra() {
     for (i=0; i < cobra.length; i++) {
-        context.fillStyle = "green";
+        context.fillStyle = "black";
         context.fillRect(cobra[i].x, cobra[i].y, box, box)
     }
 }
