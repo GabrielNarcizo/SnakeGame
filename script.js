@@ -9,6 +9,11 @@ cobra[0] = {
 
 let direcao = "right";
 
+let comida = {
+    x: Math.floor(Math.random() * 15 + 1) * box,
+    y: Math.floor(Math.random() * 15 + 1) * box
+}
+
 function criarBG() {
     context.fillStyle = 'lightgray';
     context.fillRect(0, 0, 16 * box, 16 * box);
@@ -19,6 +24,11 @@ function criarCobra() {
         context.fillStyle = "black";
         context.fillRect(cobra[i].x, cobra[i].y, box, box)
     }
+}
+
+function desenhaComida() {
+    context.fillStyle = "red"
+    context.fillRect(comida.x, comida.y, box, box)
 }
 
 document.addEventListener("keydown", update);
@@ -40,6 +50,7 @@ function iniciarJogo(){
 
     criarBG();
     criarCobra();
+    desenhaComida();
 
     let cobraX = cobra[0].x;
     let cobraY = cobra[0].y;
