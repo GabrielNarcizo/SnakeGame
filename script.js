@@ -47,6 +47,13 @@ function iniciarJogo(){
     if(cobra[0].y > 15 * box && direcao == "down") cobra[0].y = 0;
     if(cobra[0].y < 0 && direcao == "up") cobra[0].y = 16 * box;
 
+    for (let i = 1; i < cobra.length; i++) {
+        if(cobra[0].x == cobra[i].x && cobra[0].y == cobra[i].y){
+            clearInterval(jogo);
+            alert("Game over :(");
+        }
+        
+    }
 
     criarBG();
     criarCobra();
