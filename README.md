@@ -5,5 +5,5 @@ Clássico jogo da cobrinha criado em HTML, CSS e Javascript durante o bootcamp d
 #### Projeto em andamento, porém jogável! 
 
 #### Falta:
-[ ] Remover o alert de game over e usar DOM
-[ ] Colocar um Score
+- [ ] Remover o alert de game over e usar DOM
+- [ ] Colocar um Score
